@@ -1,0 +1,24 @@
+This is for windows
+
+Download Spark: spark-3.5.4-bin-hadoop3.tgz from https://spark.apache.org/downloads.html
+extract this spark-3.5.4-bin-hadoop3.tgz into 
+C:\Users\Arghya\Downloads\spark-3.5.4-bin-hadoop3\spark-3.5.4-bin-hadoop3>
+We need to download https://github.com/cdarlint/winutils
+https://github.com/cdarlint/winutils/tree/master/hadoop-3.3.6/bin
+copy the contents of this in a new folder named C:\hadoop\bin
+
+add in env variables
+HADOOP_HOME
+C:\hadoop
+
+add in path
+C:\hadoop\bin
+
+
+
+added consume_from_kafka_iotdata.py this in  examples/src/main/python/streaming/
+finally run this command
+PS C:\Users\Arghya\Downloads\spark-3.5.4-bin-hadoop3\spark-3.5.4-bin-hadoop3> 
+./bin/spark-submit
+--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 
+examples/src/main/python/streaming/consume_from_kafka_iotdata.py
