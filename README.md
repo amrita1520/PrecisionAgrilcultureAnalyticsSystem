@@ -1,5 +1,4 @@
-# PrecisionAgrilcultureAnalyticsSystem
-Objective
+# PrecisionAgrilcultureAnalyticsSystem<br>
 This project focuses on collecting, processing, and analyzing agricultural data from IoT sensors and farmers to provide real-time insights for optimizing irrigation and crop health. <br>
  Key Features <br>
 1️⃣ IoT Sensor Data Ingestion: Soil moisture, temperature, and humidity data collected from sensors. <br>
