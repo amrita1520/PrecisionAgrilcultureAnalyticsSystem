@@ -1,7 +1,7 @@
 # PrecisionAgrilcultureAnalyticsSystem
 Objective
 This project focuses on collecting, processing, and analyzing agricultural data from IoT sensors and farmers to provide real-time insights for optimizing irrigation and crop health. <br>
- Key Features
+ Key Features <br>
 1️⃣ IoT Sensor Data Ingestion: Soil moisture, temperature, and humidity data collected from sensors. <br>
 2️⃣ Farmer Input Collection: Farmers manually input crop type, irrigation method, and observations. <br>
 3️⃣ Weather API Integration: External weather data (rainfall, temperature) is fetched to enhance decision-making. <br>
