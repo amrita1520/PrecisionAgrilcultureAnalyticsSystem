@@ -28,5 +28,11 @@ public class MachineService {
         
         }
         return machinesInBangalore;
+    } 
+    //find all machine for a muser
+    public List<Machine> getMachinesByUser(String userId) {
+        return machineRepository.getMachinesByUser(userId);
     }
+        
+
 }
