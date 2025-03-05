@@ -24,11 +24,16 @@ public class MachineController {
     @PostMapping("/create")
     public Machine createMachine(@RequestBody Machine machine) {
         return machineService.saveMachine(machine);
-        }
+    }
 
     @GetMapping("/details")
     public List<Machine> allMachinesinPlace(@RequestParam String place) {
     return machineService.getAllMachinesInPlace(place);
+    }
+
+    @GetMapping("/user")
+    public List<Machine> getMachinesByUser(@RequestParam String userId) {
+        return machineService.getMachinesByUser(userId);
     }
     
 }
