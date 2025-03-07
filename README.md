@@ -24,5 +24,5 @@ CI/CD					Jenkins<br>
 
 
 
-![alt text](https://github.com/amrita1520/PrecisionAgrilcultureAnalyticsSystem/blob/main/project.drawio.png)
+![alt text](https://github.com/amrita1520/PrecisionAgrilcultureAnalyticsSystem/blob/main/project2.drawio.png)
 
