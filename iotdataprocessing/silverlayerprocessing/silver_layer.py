@@ -16,8 +16,6 @@ parquet_path = "C:/Users/Arghya/PrecisionAgricultureAnalyticsSystem/iotdatagener
 # Read Parquet files
 df = spark.read.parquet(parquet_path)
 
-df = df.withColumn("timestamp", to_timestamp(col("timestamp"), "yyyy-MM-dd HH:mm:ss"))
-
 #Divide the monitored area into small zones (grid cells) for localized analysis.
 df = df.withColumn("area_grid",
                    when((col("sensor_id").endswith("1")), "North")
@@ -44,9 +42,12 @@ df = df.withColumn("low_soil_moisture_streak", sum("low_soil_moisture_flag").ove
 df = df.withColumn("drought_alert", when(col("low_soil_moisture_streak") >= 3, 1).otherwise(0))
 
 
-
 # Show data in console
 df.show(truncate=False)
+
+# Write the DataFrame to a Parquet file
+output_parquet_path = "C:/Users/Arghya/PrecisionAgricultureAnalyticsSystem/iotdatagenerator/output_parquet_processed"
+df.write.mode("overwrite").parquet(output_parquet_path)
 
 # Stop Spark session
 spark.stop()
